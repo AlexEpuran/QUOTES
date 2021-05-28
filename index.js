@@ -81,7 +81,7 @@ nextPage.addEventListener('click', () => {
 	page == quotes.length - 50 ? (page = 0) : (page += 50);
 	quotesBody.innerHTML = '';
 
-	for (let i = page; i < page + 10; i++) {
+	for (let i = page; i < page + 50; i++) {
 		let quote = quotes[i];
 		let div = document.createElement('div');
 		let p1 = document.createElement('p');
@@ -113,7 +113,7 @@ nextPage.addEventListener('click', () => {
 previousPage.addEventListener('click', () => {
 	page == 0 ? (page = quotes.length - 50) : (page -= 50);
 	quotesBody.innerHTML = '';
-	for (let i = page; i < page + 10; i++) {
+	for (let i = page; i < page + 50; i++) {
 		let quote = quotes[i];
 		let div = document.createElement('div');
 		let p1 = document.createElement('p');
@@ -177,7 +177,7 @@ firstPage.addEventListener('click', () => {
 lastPage.addEventListener('click', () => {
 	page = quotes.length - 50;
 	quotesBody.innerHTML = '';
-	for (let i = page; i < page + 10; i++) {
+	for (let i = page; i < page + 50; i++) {
 		let quote = quotes[i];
 		let div = document.createElement('div');
 		let p1 = document.createElement('p');
